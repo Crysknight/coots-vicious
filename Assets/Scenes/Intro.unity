@@ -600,6 +600,7 @@ MonoBehaviour:
   sfxSounds: []
   musicSource: {fileID: 1010293908}
   sfxSource: {fileID: 71278016}
+  soundVolume: 0.5
 --- !u!4 &601994372
 Transform:
   m_ObjectHideFlags: 0
@@ -766,7 +767,6 @@ GameObject:
   - component: {fileID: 911425101}
   - component: {fileID: 911425100}
   - component: {fileID: 911425099}
-  - component: {fileID: 911425098}
   m_Layer: 5
   m_Name: IntroCanvas
   m_TagString: Untagged
@@ -774,23 +774,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!320 &911425098
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911425097}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!114 &911425099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1086,6 +1069,7 @@ GameObject:
   - component: {fileID: 1385142107}
   - component: {fileID: 1385142106}
   - component: {fileID: 1385142105}
+  - component: {fileID: 1385142109}
   m_Layer: 5
   m_Name: FirstParagraph
   m_TagString: Untagged
@@ -1260,6 +1244,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385142103}
   m_CullTransparentMesh: 1
+--- !u!114 &1385142109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385142103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a678ce2d5868348a3688348e2e173e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 1385142106}
 --- !u!1 &1522442290
 GameObject:
   m_ObjectHideFlags: 0
